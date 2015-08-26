@@ -22,8 +22,11 @@ def keepTestingString(userString, n):
         userString = userString[n:]
         iterateOverString(userString)
     if not checkIfReal(testString):
-        n = n-1
-        keepTestingString(userString, n)
+        if n < 1:
+            print(userString)
+        else:
+            n = n-1
+            keepTestingString(userString, n)
         
 def iterateOverString(userString):
     n = len(userString)
