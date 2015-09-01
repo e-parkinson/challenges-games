@@ -1,6 +1,6 @@
 #15 minutes
 '''
-    Input: 2 sets ascending order sorted, separated by semi-colon.
+    Input: 2 sets ascending order sorted, separated by semi-colon from file.
             Comma delimited values.
     Output: Print out the ascending order sorted intersection of the two lists, one per line.
             If no intersection, print empty.
