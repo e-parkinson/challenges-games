@@ -1,4 +1,6 @@
 # challenges-games
+04/09/2015 Caesar cipher - fixed encrypt and added decrypt
+
 01/09/2015 Caesar cipher - encrypt (not fully functioning)
 
 27/08/2015 Histogram display
