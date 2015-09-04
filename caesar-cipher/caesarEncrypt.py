@@ -4,17 +4,7 @@
     Input: plaintext message to encrypt, number of spaces to shift by.
     Output: encrypted message
 '''
-
-def getKey():
-    key = 0
-    print("Shift by: ")
-    key = int(input())
-    if key < 27 and key > 0:
-        return key
-    else:
-        print("Key must be in range 1 to 26 inclusive.")
-        getKey()
-
+        
 def encrypt(plaintext, key):
     plaintext.lower()
     shiftBy = key - 32
@@ -30,7 +20,12 @@ def encrypt(plaintext, key):
             print(symbol, end = "")
 
 #main method
-print("Enter a message to encrypt: ")
-plaintext = str(input())
-key = int(getKey())
-encrypt(plaintext, key)
+invalidKey = True
+print("Shift plaintext by: ")
+key = int(input())
+if key < 27 and key > 0:
+    print("Enter a message to encrypt: ")
+    plaintext = str(input())
+    encrypt(plaintext, key)
+else:
+    print("key not in range")
