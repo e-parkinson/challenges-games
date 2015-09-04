@@ -20,7 +20,6 @@ def encrypt(plaintext, key):
             print(symbol, end = "")
 
 #main method
-invalidKey = True
 print("Shift plaintext by: ")
 key = int(input())
 if key < 27 and key > 0:
