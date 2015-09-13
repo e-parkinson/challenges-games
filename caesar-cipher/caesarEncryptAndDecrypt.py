@@ -3,7 +3,8 @@
     Takes as input: 'e'/'d', key, plaintext/ciphertext
     Outputs: ciphertext/plaintext
 '''
-        
+import os
+
 def encrypt(plaintext, key):
     plaintext = plaintext.lower()
     shiftBy = key - 32
@@ -17,6 +18,7 @@ def encrypt(plaintext, key):
             print(newChar, end = "")
         else:
             print(symbol, end = "")
+
 
 def decrypt(ciphertext, key):
     ciphertext = ciphertext.upper()
@@ -34,6 +36,7 @@ def decrypt(ciphertext, key):
         else:
             print(symbol, end="")
 
+
 #main method
 print("Encrypt (e) or decrypt (d)?")
 decisionDirect = str(input())
@@ -50,3 +53,7 @@ if key < 27 and key > 0:
         decrypt(ciphertext, key)
 else:
     print("key not in range")
+
+print(" ")
+os.system("pause")
+
